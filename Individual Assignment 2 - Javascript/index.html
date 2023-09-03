@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+        poppins: "'Poppins', serif",
+        raleway: "'Raleway', serif",
+      }, 
+        },
+      },
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="dark:bg-[#242423] bg-[#F2F5F9]">
+  <div class="dark:bg-[#242423] bg-[#F2F5F9] px-[7vw]">
+
+  <div class="relative h-14 md:hidden flex items-center">
+    <div class="md:hidden w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px] flex items-center">
+      <button class="flex h-[24px] w-[24px] items-center justify-center tombol-terang dark:translate-x-[20px] transition-all bg-black dark:bg-[#fac105] rounded-xl" onclick="changeColor()">
+        
+        <i class="dark:inline hidden fa-solid fa-sun fa-sm" style="color: #050505;"></i>
+        <i class="fa-solid fa-moon dark:hidden fa-flip-horizontal fa-md" style="color: #f9f9fa;"></i>
+  
+      </button>
+    </div>
+
+    <div class="md:hidden ml-5 flex items-center justify-center rounded-lg w-36 bg-[#131312] font-raleway font-bold text-red-600">
+    <p class="m-auto">
+    MY<span class="text-white dark:text-white">PORTFOLIO</span></p>
+    </div>
+    </div>
+
+    <!-- mode gelap mulai -->
+
+  <div class="hidden fixed right-32 top-12 ml-9 lg:inline-flex lg:items-center w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px]">
+    <button class="flex h-[24px] w-[24px] items-center justify-center tombol-terang dark:translate-x-[20px] transition-all bg-black dark:bg-[#fac105] rounded-xl" onclick="changeColor()">
+      
+      <i class="dark:inline hidden fa-solid fa-sun fa-sm" style="color: #050505;"></i>
+      <i class="fa-solid fa-moon dark:hidden fa-flip-horizontal fa-md" style="color: #f9f9fa;"></i>
+    </button>
+</div>
+
+<!-- mode gelap selesai -->
+
+  <div class="grid grid-cols-1 gap-y-8 md:grid-cols-3 lg:grid-cols-3 md:gap-4">
+
+  <!-- profile info start -->
+  <div class="mt-[60px] md:mt-0">
+  <section id="section-1" class="w-full md:fixed md:w-[17em] md:pt-5">
+  <div id="my-profile" class="dark:bg-[#131312] w-full md:w-[17em] md:fixed h-[36em] mb-3 bg-[#ffffff] pt-8 rounded-[16px]">
+    <div class="w-full flex justify-center">
+    <img class="w-40 h-44 rounded-[20%] border-4 border-solid border-[#FF9C1A] bg-[#f3c42a] mb-2" src="aku.jpg" alt="profile">
+    </div>
+    <div id="profile-name" class=" text-center">
+    <h1 class="dark:text-white font-raleway font-semibold text-[21px] my-1">Susilo Jatmiko</h1>
+    <p class="dark:text-slate-200 mb-2 font-raleway text-xs my-1.5 text-slate-500">Front end Developer</p>
+  </div>
+
+    <div id="sosmed-account" class="flex justify-center gap-2 my-2">
+
+      <a href="">
+      <div id="facebook" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1877F2] active:opacity-5 transition cursor-pointer">
+      <img src="sosmed icon/facebook.png" alt="facebook">
+      </div>
+      </a>
+
+      <a href="">
+      <div id="linkedin" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0077B5] active:opacity-5 transition cursor-pointer">
+      <img src="sosmed icon/linkedin.png" alt="linkedin">
+      </div>
+      </a>
+
+      <a href="">
+      <div id="twitter" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1DA1F2] active:opacity-5 transition cursor-pointer">
+      <img src="sosmed icon/twitter.png" alt="twitter">
+      </div>
+      </a>
+
+      <a href="">
+      <div id="github" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0B0909] active:opacity-5 transition cursor-pointer">
+        <img src="sosmed icon/github.png" alt="github">
+        </div>
+        </a>
+    </div>
+    
+    <!-- <div class=" bg-[#F2F5F9] w-[88%] m-auto mt-3 rounded-lg py-8"> -->
+      <div class="flex justify-center mt-3 w-[88%] m-auto">
+      <div class="grid grid-cols-1 gap-2 w-[100%]">
+
+        <a href="#about-me">
+          <div id="home-page" class="text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Home</div>
+        </a>
+        
+        <a href="#resume">
+          <div id="resume-page" class="text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Resume</div>
+        </a>
+        
+        <a href="#contact">
+          <div id="contact-page" class="text-[16px] font-semibold text-gray-800 bg-[#E1E8EF] transition hover:text-white hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Contact</div>
+        </a>
+      </div>
+  </div>
+  <div id="download-resume" class="flex justify-center w-[88%] m-auto">
+    <a href="https://drive.google.com/file/d/1gimozWvqqR0j1Atpszm76Z-h9Xrfb6Yj/view?usp=sharing" class="w-[100%]"  target="_blank">
+    <button type="button" class="text-sm hover:opacity-[0.8] transition active:bg-[#EC1B09] mt-2 -mb-2 text-white dark:text-gray-900 font-semibold w-[100%] py-2 px-4 bg-[#FF9C1B]
+    rounded-3xl">Download Resume</button>
+    </a>
+  </div>
+</section>
+</div>
+<!-- profil info end -->
+
+
+<section id="section-2" class="md:overflow-hidden col-span-2 gap-10 md:gap-14 grid grid-cols-1 h-[100vh]">
+
+<!-- main content start -->
+<!-- home start -->
+<div id="about-me" class="md:h-[100vh] md:py-5">
+<div class=" dark:bg-[#131312] w-full h-full bg-[#ffffff] rounded-[16px] py-6 px-6 md:px-[3.2rem]">
+  <div class="lg:flex lg:items-center mb-3 gap-5">
+  <h1 class="dark:text-white font-poppins font-medium text-3xl tracking-wide">ABOUT ME</h1>
+  <div class="h-[2px] w-[100%] lg:w-[30vh] md:w-[100%] bg-[#FF9C1A] rounded-xl"></div>
+
+</div>
+
+<div>
+<p class="dark:text-white text-[11px] leading-5 font-medium font-raleway">Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies. My journey in the world of web development has been nothing short of exhilarating, and I constantly strive to enhance my skills and embrace emerging trends in the industry.</p>
+</div>
+
+<div>
+<h1 class="dark:text-white font-poppins tracking-wide my-4 text-2xl">What I do!</h1>
+</div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
+
+<div id="web-dev" class="px-3 pt-[5px] pb-[10px] bg-[#FFEBD1] h-full lg:h-[140px] rounded-xl flex justify-center items-start">
+  <div>
+  <div class="items-center justify-center flex gap-2">
+    <img class="w-4 h-4" src="project-icon/web dev.png" alt="">
+    <h2 class="font-poppins font-bold text-lg">Web Development</h2>
+  </div>
+  <p class="font-poppins text-[10.5px] md:text-[10px] text-justify">As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.</p>
+</div>
+</div>
+
+<div id="app-dev" class="px-3 pt-[5px] pb-[10px] bg-[#F2F7FC] h-full lg:h-[140px] rounded-xl flex justify-center items-start">
+  <div>
+  <div class="items-center justify-center flex gap-2">
+    <img class="w-4 h-4" src="project-icon/app dev.png" alt="">
+    <h2 class="font-poppins font-bold text-lg">App Development</h2>
+  </div>
+  <p class="font-poppins text-[10.5px] md:text-[10px] text-justify">With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together.</p>
+</div>
+</div>
+
+<div id="ui/ux-design" class="px-3 pt-[5px] pb-[10px] md:pt-[14px] bg-[#F2F7FC] h-full lg:h-[140px] rounded-xl flex justify-center items-start">
+  <div>
+  <div class="items-center justify-center flex gap-2">
+    <img class="w-4 h-4" src="project-icon/ui-ux.png" alt="">
+    <h2 class="font-poppins font-bold text-lg">UI/UX Designing</h2>
+  </div>
+  <p class="font-poppins text-[13px] md:text-[12px] text-justify">Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about.</p>
+</div>
+</div>
+
+<div id="mentorship" class="px-3 pt-[5px] pb-[10px] md:pt-[12px] bg-[#FFEBD1] h-full lg:h-[140px] rounded-xl flex justify-center items-start">
+  <div>
+  <div class="items-center justify-center flex gap-2">
+    <img class="w-4 h-4" src="project-icon/mentorship.png" alt="">
+    <h2 class="font-poppins font-bold text-lg">Mentorship</h2>
+  </div>
+  <p class="font-poppins text-[11.3px] md:text-[10.5px] text-justify">I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- home end -->
+  <!-- resume start  -->
+  <div id="resume" class="md:h-[100vh] md:py-5">
+  <div class="dark:bg-[#131312] w-full h-full bg-[#ffffff] rounded-[16px] py-6 px-6 md:px-[3.2rem]">
+    <div class="lg:flex lg:items-center mb-3 gap-5">
+    <h1 class="dark:text-white font-poppins font-medium text-3xl tracking-wide">RESUME</h1>
+    <div class="h-[2px] w-[100%] lg:w-[30vh] md:w-[100%] bg-[#FF9C1A] rounded-xl"></div>
+  </div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
+
+
+<div class="grid grid-cols-1 gap-4 mt-[12px]">
+
+  <div id="education" class="flex items-center gap-2">
+    <img class="w-6 h-6" src="resume icon/education.png" alt="toga">
+    <div>
+    <p class="dark:text-white text-[22px] font-poppins font-medium">Education</p>
+    </div>
+  </div>
+
+  <div class="px-3 pt-[5px] pb-[10px] bg-[#FFEBD1] h-full lg:h-[90px] rounded-xl flex justify-start items-center">
+    <div>
+      <p class="font-raleway font-semibold  text-gray-700 text-[11px] my-1">2010 - 2013</p>
+      <p class="font-raleway font-semibold text-[11px] my-1">Computer & Network Engineering</p>
+      <p class="font-raleway text-[10.5px] md:text-[10px]">(Vocational School) SMK NU Ma'arif Kudus</p>
+  </div>
+  </div>
+
+  <div class="px-3 pt-[5px] pb-[10px] bg-[#FFEED9] h-full lg:h-[90px] rounded-xl flex justify-start items-center">
+    <div>
+      <p class="font-raleway font-semibold  text-gray-700 text-[11px] my-1">Present (On Progress)</p>
+      <p class="font-raleway font-semibold text-[11px] my-1">FullStack Web Development</p>
+      <p class="font-raleway text-[10.5px] md:text-[10px]">Harisenin Bootcamp</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="grid grid-cols-1 gap-4 mt-[12px]">
+
+    <div id="experience" class="flex items-center gap-2">
+      <img class="w-5 h-5" src="resume icon/experience.png" alt="office-bag">
+      <div>
+      <p class="dark:text-white text-[22px] font-poppins font-medium">Experience</p>
+      </div>
+    </div>
+
+    <div class="px-3 pt-[5px] pb-[10px] bg-[#FFEED9] h-full lg:h-[90px] rounded-xl flex justify-start items-center">
+      <div>
+        <p class="font-raleway font-semibold  text-gray-700 text-[11px] my-1">2012</p>
+        <p class="font-raleway font-semibold text-[11px] my-1">Internship as Computer Enginering</p>
+        <p class="font-raleway text-[10.5px] md:text-[10px]">Dewa Computer - Service & Troubleshoot</p>
+    </div>
+    </div>
+
+    <div class="px-3 pt-[5px] pb-[10px] bg-[#FFEBD1] h-full lg:h-[90px] rounded-xl flex justify-start items-center">
+      <div>
+        <p class="font-raleway font-semibold  text-gray-700 text-[11px] my-1">2013 - 2014</p>
+        <p class="font-raleway font-semibold text-[11px] my-1">Production Operator at Box Speaker</p>
+        <p class="font-raleway text-[10.5px] md:text-[10px]">PT. Hartono Istana teknologi (Polytron)</p>
+    </div>
+    </div>
+ </div>
+</div>
+
+
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
+
+<div id="work-skill">
+  <div>
+  <p class="dark:text-white text-[22px] pt-4 pb-2 font-poppins font-medium">Work Skills</p>
+  </div>
+  <div class="grid grid-cols-1 gap-3">
+    <div class="flex gap-7">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">NEXT.js</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">React.js</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">HTML 5</span>
+    </div>
+
+    <div class="flex gap-5">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">CSS 3</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Tailwind CSS</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Figma</span>
+    </div>
+
+    <div class="flex gap-[15px]">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Javascript</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Mongo DB</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">SQL</span>
+    </div>
+
+    <div class="flex gap-[26px]">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Angular</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Android</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Git</span>
+  </div>
+  </div>
+</div>
+
+<div id="soft-skill">
+  <div>
+  <p class="dark:text-white text-[22px] pt-4 pb-2 font-poppins font-medium">Soft Skills</p>
+  </div>
+  <div class="grid grid-cols-1 gap-3">
+    <div class="flex gap-7">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Time Management</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Mentorship</span>
+    </div>
+
+    <div class="flex gap-5">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Impeccable Communication</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Flexibility</span>
+    </div>
+
+    <div class="flex gap-[15px]">
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Research</span>
+    <span class="text-[10px] bg-[#E1E8EF] p-[6px] rounded-md font-raleway">Writing</span>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+  <!-- resume end  -->
+
+  <!-- contact start -->
+  <div id="contact" class="md:h-[100vh] md:py-5">
+  <div class="dark:bg-[#131312] w-full h-[100%] bg-[#ffffff] rounded-[16px] py-6 px-6 md:px-[3.2rem]">
+    <div class="mb-5 lg:flex lg:items-center gap-5">
+    <h1 class="dark:text-white font-poppins font-medium text-3xl tracking-wide">Contact</h1>
+    <div class="h-[2px] w-[100%] lg:w-[30vh] md:w-[100%] bg-[#FF9C1A] rounded-xl"></div>
+  </div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4">
+
+  <div id="phone-number" class="px-5 pt-[5px] pb-[10px] bg-[#FFEBD1] h-full lg:h-[105px] rounded-xl flex justify-start items-center">
+    <div class="flex items-start mb-6 gap-2">
+      <img class="w-[16px] h-[15px] pt-[3px]" src="contact icon/phone.png" alt="email">
+      <div>
+      <p class="text-[12px] font-poppins  font-semibold">Phone</p>
+      <p class="text-[12px] font-poppins">+6289512330009</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="email-address" class="px-5 pt-[5px] pb-[10px] bg-[#F2F7FC] h-full lg:h-[105px] rounded-xl flex justify-start items-center">
+    <div class="flex items-start mb-6 gap-2">
+      <img class="w-[16px] h-[15px] pt-[3px]" src="contact icon/email.png" alt="email">
+      <div>
+      <p class="text-[12px] font-poppins  font-semibold">Email</p>
+      <p class="text-[12px] font-poppins">mikostillalive@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="form-submit" class="w-full p-7 h:full md:h-[67%] lg:h-[65%] bg-[#F2F7FC] rounded-lg mt-6">
+    <form id="cform">
+     <fieldset>
+      <legend class="font-raleway text-xs mb-5">I am always open to discussing <span class="font-semibold">new projects, opportunities in tech world, partnerships</span> and more so <span class="font-semibold">mentorship</span>.</legend>
+
+      <!-- <label class="text-sm font-semibold" for="fname">Name:</label> -->
+      <input class="w-full h-9 px-2 my-3 rounded-2xl bg-[#F2F7FC]" type="text" id="fname" name="fname" placeholder="Name :" required>
+      <hr>
+      <!-- <label class="text-sm font-semibold" for="femail">Email:</label> -->
+      <input class="w-full h-9 px-2 my-3 rounded-2xl bg-[#F2F7FC]" type="email" id="femail" name="femail" placeholder="Email :" required>
+      <hr>
+      <!-- <label class="text-sm font-semibold" for="fmessage">Message:</label> -->
+      <input class="w-full h-9 px-2 my-3 rounded-2xl bg-[#F2F7FC]" type="text" id="fmessage" name="fmessage" placeholder="Message :" required>
+      <hr>
+      <div id="button-submit" class="mt-[20px] mx-auto h-[30px] w-[100%] rounded-2xl bg-gradient-to-br from-[#FD8A18] to-[#EE2C0B]">
+      <input id="btn" class="text-xs w-[99.5%] bg-[#F2F7FC] h-[28px] rounded-2xl mx-[1px] mt-[1px] py-[4px] border border-solid border-[#F2F7FC] transition hover:bg-transparent hover:text-white active:opacity-5 cursor-pointer" type="submit" value="Submit">
+      </div>
+     </fieldset>
+    </form>
+  </div>
+</div>
+  <!-- contact end -->
+  <!-- main content end -->
+</section>
+</div>
+</div>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="3dc5adfc-0d78-4ddc-bcaa-6fca8390a33e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<script src="javascript.js"></script>
+</body>
+</html>
