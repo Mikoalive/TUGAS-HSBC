@@ -16,6 +16,15 @@ if(tema == 'dark') {
 }
 
 
+// live chat 
+window.$crisp=[];
+window.CRISP_WEBSITE_ID="3dc5adfc-0d78-4ddc-bcaa-6fca8390a33e";(function(){d=document;
+    s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";
+    s.async=1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();
+
 
 
 // // formulir contact
