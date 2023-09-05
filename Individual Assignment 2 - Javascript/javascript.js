@@ -44,3 +44,27 @@ const mengetik = () => {
 }
 mengetik()
 
+// form chat whatsapp
+
+function kirimwhatsapp() {
+
+    let noHape = "+6289512330009";
+
+    let name =  document.querySelector("#fname").value;
+    let email =  document.querySelector("#femail").value;
+    let message =  document.querySelector("#fmessage").value;
+
+    let url = "https://wa.me/" + noHape + "?text=" 
+    + "*Name* : " +name+ "%0A"
+    + "*Email* : " +email+ "%0A"
+    + "*Message* : " +message+ "%0A";
+
+    window.open(url, "_blank").focus();
+};
+
+window.onbeforeunload = function() {
+    for (const form of document.getElementsByTagName("form")) {
+        form.reset();
+    }
+}
+
