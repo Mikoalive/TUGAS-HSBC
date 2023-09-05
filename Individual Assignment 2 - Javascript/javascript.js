@@ -16,51 +16,31 @@ if(tema == 'dark') {
 }
 
 
-// live chat 
-window.$crisp=[];
-window.CRISP_WEBSITE_ID="3dc5adfc-0d78-4ddc-bcaa-6fca8390a33e";(function(){d=document;
-    s=d.createElement("script");
-    s.src="https://client.crisp.chat/l.js";
-    s.async=1;
-    d.getElementsByTagName("head")[0].appendChild(s);
-})();
+// judul web 
 
+const efekKetik = document.querySelector("h3 span");
+const gantiKata = ["PORTFOLIO", "PROFILE", "PROJECT", "JOURNEY"];
 
+let indexKata = 0;
+let indexHuruf = 0;
+let hapus = false;
 
-// // formulir contact
+const mengetik = () => {
+    const katakata = gantiKata[indexKata];
+    const karakter = katakata.substring(0, indexHuruf);
+    efekKetik.textContent = karakter;
 
-// const contactForm = document.getElementById("cform");
-// const nameInput = document.getElementById("fname");
-// const emailInput = document.getElementById("femail");
-// const messageInput = document.getElementById("fmessage");
-// const btnSubmit = document.getElementById("btn");
+    if(!hapus && indexHuruf < katakata.length) {
+        indexHuruf++;
+        setTimeout(mengetik, 100);
+    } else if (hapus && indexHuruf > 0) {
+        indexHuruf--;
+        setTimeout(mengetik, 50);
+    } else {
+        hapus = !hapus;
+        indexKata = !hapus ? (indexKata + 1) % gantiKata.length : indexKata;
+        setTimeout(mengetik, 1000); 
+    }
+}
+mengetik()
 
-// const publicKey = "V-1_Jd0ighvR28BZM";
-// const serviceID = "service_jp009at";
-// const templateID = "template_u7am744";
-
-
-// emailjs.init(publicKey);
-// contactForm.addEventListener("Submit", e => {
-//   e.preventDefault();
-// btnSubmit.innerText = "Just A Moment...";
-
-// const inputFields = {
-//   name: nameInput.value,
-//   email: emailInput.value,
-//   message: messageInput.value
-// }
-
-// emailjs.send(serviceID, templateID, inputFields, publicKey)
-// .then (() => {
-//   alert('Pesan berhasil terkirim');
-
-//   nameInput.value = "";
-//   emailInput.value = "";
-//   messageInput.value = "";
-
-// }, (error) => {
-//   console.log(error);
-//   btnSubmit.innerHTML = "Pesan tidak terkirim!";
-// });
-// });
