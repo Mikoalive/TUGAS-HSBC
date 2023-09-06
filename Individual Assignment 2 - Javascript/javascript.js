@@ -1,3 +1,5 @@
+// fitur mode gelap 
+
 let darkmode = document.querySelector("html");
 
 function changeColor() {
@@ -16,7 +18,7 @@ if(tema == 'dark') {
 }
 
 
-// judul web 
+// typing judul
 
 const efekKetik = document.querySelector("h3 span");
 const gantiKata = ["PORTFOLIO", "PROFILE", "PROJECT", "JOURNEY"];
@@ -44,7 +46,8 @@ const mengetik = () => {
 }
 mengetik()
 
-// form chat whatsapp
+
+// message ke whatsapp
 
 function kirimwhatsapp() {
 
@@ -68,3 +71,11 @@ window.onbeforeunload = function() {
     }
 }
 
+
+// responsive menu
+
+function menu(e) {
+    let list = document.getElementById('my-profile');
+
+    e.name === 'menu' ? (e.name = "close", list.classList.add('left-[7vw]') , list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('left-[7vw]'), list.classList.remove('opacity-100'))
+} 

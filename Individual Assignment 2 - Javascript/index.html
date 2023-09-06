@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,15 +27,19 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
+
 <body class="dark:bg-[#242423] bg-[#F2F5F9]">
   <div class="dark:bg-[#242423] bg-[#F2F5F9] px-[7vw]">
 
-    <div class="dark:bg-[#242423] bg-[#F2F5F9] right-0 w-full h-[70px] md:hidden fixed"></div>
+    <div class="dark:bg-[#242423] bg-[#F2F5F9] right-0 w-full h-[80px] md:hidden fixed"></div>
     <div>
   <div class="h-20 md:h-0 w-full left-0 right-0 box-border flex items-center">
 
-    <div class="fixed left-10 z-[1000] md:hidden w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px] flex items-center">
+    <div class="fixed left-[7vw] z-[1000] md:hidden w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px] flex items-center">
       <button class="flex h-[24px] w-[24px] items-center justify-center tombol-terang dark:translate-x-[20px] transition-all bg-black dark:bg-[#fac105] rounded-xl" onclick="changeColor()">
         
         <i class="dark:inline hidden fa-solid fa-sun fa-sm" style="color: #050505;"></i>
@@ -42,25 +47,19 @@
       </button>
     </div>
 
-    <div class="w-full flex items-center md:z-[1000] md:items-end justify-center">
-    <div class="fixed md:z-[1000] md:left-[7.2rem] md:top-7 md:bg-white md:dark:bg-[#131312] flex items-center justify-center rounded-lg h-11 w-[12.5rem] dark:bg-[#131312]">
-    <h3 class="text-2xl md:text-2xl font-raleway font-extrabold tracking-wide text-red-700">
+    <div class="slide: w-full flex items-center md:z-[1000] md:items-end justify-center">
+    <div class="fixed md:z-[1000] md:left-[7.2rem] md:top-7 md:bg-white md:dark:bg-[#131312] flex items-center justify-center rounded-lg h-11 w-[50vw] md:w-[12.5rem] dark:bg-[#131312]">
+    <h3 class="text-[5.5vw] md:text-2xl font-raleway font-extrabold tracking-wide text-red-700">
     MY<span class="before:-translate-y-[45%] before:top-[50%] before:content-[] before:absolute relative text-black md:text-black dark:text-white">PORTFOLIO</span><span class="ml-[2px] font-semibold text-black dark:text-white">|</span></h3>
     </div>
    </div>
-
-
-    <button class="flex items-center justify-center md:hidden bg-[#666666] w-8 h-8 top-7 right-10 fixed">
-    <i class="fa-solid fa-bars fa-xl text-white pointer"></i>
-    
-    <i class="hidden fa-solid fa-x fa-xl text-white pointer"></i>
-    </button>
+   
   </div>
 </div>
 
     <!-- mode gelap mulai -->
 
-  <div class="hidden fixed right-32 top-12 ml-9 lg:inline-flex lg:items-center w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px]">
+  <div class="hidden fixed right-32 top-12 ml-9 md:inline-flex md:items-center w-[47px] h-[26px] bg-[#F2F7FC] border-2 border-solid dark:border-slate-300 border-slate-500 rounded-[14px]">
     <button class="flex h-[24px] w-[24px] items-center justify-center tombol-terang dark:translate-x-[20px] transition-all bg-black dark:bg-[#fac105] rounded-xl" onclick="changeColor()">
       
       <i class="dark:inline hidden fa-solid fa-sun fa-sm" style="color: #050505;"></i>
@@ -73,12 +72,17 @@
   <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 md:gap-4">
   <section  id="section-1">
   <!-- profile info start -->
-  <div id="nav-profile" class="md:mt-0">
+  <div id="nav-profile">
 
-  <div class="w-full md:fixed md:w-[17em] md:pt-5">
-  <div id="my-profile" class="dark:bg-[#131312] w-full md:w-[17em] md:fixed h-[35rem] md:h-[93vh] mb-3 bg-[#ffffff] pt-10 md:pt-14 rounded-[16px]">
+  <div id="my-profile" class="h-[100vh] dark:bg-[#242423] bg-[#F2F5F9] w-[86vw] transition-all -left-[90vw] md:left-[7vw] fixed md:w-[17em] md:pt-5">
+
+    <span class="md:hidden text-3xl rounded-sm cursor-pointer flex items-center justify-center bg-[#666666] w-8 h-8 top-[25px] right-[7vw] fixed" onclick="sliderMenu()">
+      <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+    </span>
+
+  <div class="dark:bg-[#131312] w-full md:w-[17em] md:fixed h-[83vh] md:h-[93vh] mb-3 bg-[#ffffff] pt-7 md:pt-14 rounded-[16px]">
     <div class="w-full flex justify-center">
-    <img class="w-40 h-44 rounded-[20%] border-4 border-solid border-[#FF9C1A] bg-[#f3c42a] mb-2" src="aku.jpg" alt="profile">
+    <img class="w-[22vh] h-[25vh] md:w-40 md:h-44 rounded-[20%] border-4 border-solid border-[#FF9C1A] bg-[#f3c42a] mb-2" src="aku.jpg" alt="profile">
     </div>
     <div id="profile-name" class=" text-center">
     <h1 class="dark:text-white font-raleway font-semibold text-[21px] my-1">Susilo Jatmiko</h1>
@@ -88,44 +92,44 @@
     <div id="sosmed-account" class="flex justify-center gap-2 my-2">
 
       <a href="">
-      <div id="facebook" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1877F2] active:opacity-5 transition cursor-pointer">
+      <div id="facebook" class="bg-[#F2F5F9] w-[7vh] h-[7vh] md:w-11 md:h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1877F2] active:opacity-5 transition cursor-pointer">
       <img src="sosmed icon/facebook.png" alt="facebook">
       </div>
       </a>
 
       <a href="">
-      <div id="linkedin" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0077B5] active:opacity-5 transition cursor-pointer">
+      <div id="linkedin" class="bg-[#F2F5F9] w-[7vh] h-[7vh] md:w-11 md:h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0077B5] active:opacity-5 transition cursor-pointer">
       <img src="sosmed icon/linkedin.png" alt="linkedin">
       </div>
       </a>
 
       <a href="">
-      <div id="twitter" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1DA1F2] active:opacity-5 transition cursor-pointer">
+      <div id="twitter" class="bg-[#F2F5F9] w-[7vh] h-[7vh] md:w-11 md:h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#1DA1F2] active:opacity-5 transition cursor-pointer">
       <img src="sosmed icon/twitter.png" alt="twitter">
       </div>
       </a>
 
       <a href="">
-      <div id="github" class="bg-[#F2F5F9] w-11 h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0B0909] active:opacity-5 transition cursor-pointer">
+      <div id="github" class="bg-[#F2F5F9] w-[7vh] h-[7vh] md:w-11 md:h-11 rounded-[4px] flex justify-center items-center hover:border-2 hover:border-solid hover:border-[#0B0909] active:opacity-5 transition cursor-pointer">
         <img src="sosmed icon/github.png" alt="github">
         </div>
         </a>
     </div>
     
-    <!-- <div class=" bg-[#F2F5F9] w-[88%] m-auto mt-3 rounded-lg py-8"> -->
+
       <div class="flex justify-center mt-3 w-[88%] m-auto">
       <div class="grid grid-cols-1 gap-2 w-[100%]">
 
         <a href="#about-me">
-          <div id="home-page" class="text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Home</div>
+          <div id="home-page" class="text-[2.5vh] md:text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[5.25vh] lg:h-[34px]">Home</div>
         </a>
         
         <a href="#resume">
-          <div id="resume-page" class="text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Resume</div>
+          <div id="resume-page" class="text-[2.5vh] md:text-[16px] font-semibold text-gray-800 hover:text-white bg-[#E1E8EF] transition hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[5.25vh] lg:h-[34px]">Resume</div>
         </a>
         
         <a href="#contact">
-          <div id="contact-page" class="text-[16px] font-semibold text-gray-800 bg-[#E1E8EF] transition hover:text-white hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[34px]">Contact</div>
+          <div id="contact-page" class="text-[2.5vh] md:text-[16px] font-semibold text-gray-800 bg-[#E1E8EF] transition hover:text-white hover:bg-[#FF9C1A] active:opacity-5 flex items-center justify-center rounded-2xl w-[100%] h-[5.25vh] lg:h-[34px]">Contact</div>
         </a>
       </div>
   </div>
@@ -146,11 +150,11 @@
 <div>
 <!-- main content start -->
 <!-- home start -->
-<div id="about-me" class="md:h-[100vh] pt-20 md:py-5">
+<div id="about-me" class="md:h-[100vh] md:py-5">
 <div class=" dark:bg-[#131312] w-full h-full md:h-[93vh] bg-[#ffffff] rounded-[16px] py-6 px-6 md:px-[3.2rem]">
-  <div class="lg:flex lg:items-center mb-3 gap-5">
+  <div class="md:flex md:items-center mb-3 gap-5">
   <h1 class="dark:text-white font-poppins font-medium text-3xl tracking-wide">ABOUT ME</h1>
-  <div class="h-[2px] w-[100%] lg:w-[30vh] md:w-[100%] bg-[#FF9C1A] rounded-xl"></div>
+  <div class="h-[2px] w-[100%] md:w-[30vh] bg-[#FF9C1A] rounded-xl"></div>
 
 </div>
 
